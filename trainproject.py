@@ -95,3 +95,10 @@ model_nvbse.fit(x_train,y_train)
 y_pred=model_nvbse.predict(x_test)
 from sklearn.metrics import accuracy_score
 print(accuracy_score(y_test,y_pred))
+
+
+import matplotlib.pyplot as plt
+algo=["KNN","Naive","Logistic","Decision Tree"]
+per=[96.32,99.73,98.60,27.60]
+c=["red","blue","cyan","brown"]
+plt.bar(algo,per,color=c)
